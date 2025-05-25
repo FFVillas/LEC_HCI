@@ -2,13 +2,16 @@
     --body-color: #F8F6FC;
     --white-color: #FFFFFF;
     --primary-color: #625AFF;
+    --primary-color-rgb: 90, 90, 255;
     --text-color: #251B5A;
+    --border-color: #E4E3EB;
 }
 
-html, body {
+/* ===== UNIVERSAL STYLES ===== */
+* {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Nunito-Sans', sans-serif;
   box-sizing: border-box;
 }
 
@@ -21,8 +24,33 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   font-size: 16px;
+  height: 100vh;
 }
 
+/* ===== REUSABLE CSS ===== */
+.sidebar-toggle{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 50%;
+    right: -16px;
+    transform: translateY(-50%);
+    border: 2px solid var(--border-color);
+    border-radius: 120%;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.sidebar-toggle .material-symbols{
+    font-size: 1.5rem;
+    transform: scaleX(-1);
+    display: block;
+}
+
+/* ===== SIDEBAR ===== */
 .sidebar{
     position: fixed;
     top: 0;
@@ -32,12 +60,83 @@ body {
     background-color: var(--white-color);
 }
 
+.sidebar header{
+    position: relative
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 72%;
+    height: auto;
+    padding: 20px 0;
+}
+
+.menu-bar{
+    height: 100%;
+}
+
+.menu{
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menu-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-link {
+    height: 56px;
+    width: 80%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 8px;
+}
+
+.nav-link.active{
+    background-color: rgba(var(--primary-color-rgb), 0.16);
+}
+
+.nav-link a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+
+.nav-link .material-symbols-rounded {
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: 64%;
+}
+
+.nav-link.nav-link.active .material-symbols-rounded{
+    color: var(--primary-color);
+    opacity: 100%;
+}
+
+.nav-link .nav-text{
+    font-weight: 600;
+}
+
+
 .content {
     margin-left: 250px;
     padding: 20px;
 }
 
-header {
+
+.content header {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
@@ -59,14 +158,14 @@ header {
   object-fit: cover;
 }
 
-.user-text p:first-child {
+.user-text .name {
   margin: 0;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
 }
 
-.user-text p:last-child {
+.user-text .email {
   margin: 4px 0 0;
   font-size: 16px;
   color: #7e7e9f;
@@ -91,9 +190,9 @@ header {
   padding: 12px 20px; 
 }
 
-.search-box i {
+.search-box .material-symbols-rounded {
   color: #7e7e9f;
-  font-size: 16px;
+  font-size: 1.2rem;
 }
 
 .search-box input {
@@ -117,8 +216,8 @@ header {
   border: none;
   cursor: pointer;
   padding: 8px;
-  color: #7e7e9f;
-  font-size: 18px;
+  color: var(--text-color);
+  font-size: 1.2rem;
 }
 
 .icon-btn:hover {

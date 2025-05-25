@@ -6,6 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <title>Document</title>
@@ -18,9 +20,54 @@
             </div>
 
             <button class="sidebar-toggle">
-                <img src="./assets/icons/Arrow_Notail.svg">
+                <span class="material-symbols">chevron_right</span>
             </button>
         </header>
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-link">
+                    <li class="nav-link active">
+                        <a href="#">
+                            <span class="material-symbols-rounded">home</span>
+                            <span class="nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="material-symbols-rounded">description</span>
+                            <span class="nav-text">Notes</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="material-symbols-rounded">Folder</span>
+                            <span class="nav-text">Projects</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="material-symbols-rounded">settings</span>
+                            <span class="nav-text">Settings</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="menu-link">
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="material-symbols-rounded">support_agent</span>
+                            <span class="nav-text">Support</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="material-symbols-rounded">logout</span>
+                            <span class="nav-text">Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <div class="content">
@@ -34,21 +81,20 @@
             </div>
             <div class="search-area">
                 <div class="search-box">
-                <i class="fas fa-search" aria-hidden="true"></i>
+                <span class="material-symbols-rounded">search</span>
                 <input type="search" placeholder="Search Anything" aria-label="Search Anything" />
                 </div>
             </div>
             <div class="icon-buttons">
                 <button class="icon-btn" aria-label="Refresh">
-                    <i class="fas fa-sync-alt" aria-hidden="true"></i>
+                    <span class="material-symbols-rounded">sync</span>
                 </button>
                 <button class="icon-btn" aria-label="More options">
-                    <i class="fas fa-ellipsis-h" aria-hidden="true"></i>
+                    <span class="material-symbols-rounded">more_horiz</span>
                 </button>
             </div>
         </header>
     </div>
-
 </body>
 <script src="script.js"></script>
 </html>
