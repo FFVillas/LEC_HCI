@@ -2,6 +2,7 @@
     --body-color: #F8F6FC;
     --white-color: #FFFFFF;
     --primary-color: #625AFF;
+    --primary-color-rgb: 90, 90, 255;
     --text-color: #251B5A;
     --border-color: #E4E3EB;
 }
@@ -75,15 +76,24 @@ body {
     padding: 20px 0;
 }
 
-.sidebar ul{
+.menu-bar{
+    height: 100%;
+}
+
+.menu{
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menu-link {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.sidebar li {
+.nav-link {
     height: 56px;
     width: 80%;
-    background-color: red;
     list-style: none;
     display: flex;
     align-items: center;
@@ -91,17 +101,34 @@ body {
     border-radius: 8px;
 }
 
-.sidebar li a {
+.nav-link.active{
+    background-color: rgba(var(--primary-color-rgb), 0.16);
+}
+
+.nav-link a {
     height: 100%;
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.sidebar li .material-icons {
-    height: 64px;
-    fill: white;
+
+
+.nav-link .material-symbols-rounded {
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: 64%;
 }
+
+.nav-link.nav-link.active .material-symbols-rounded{
+    color: var(--primary-color);
+    opacity: 100%;
+}
+
+.nav-link .nav-text{
+    font-weight: 600;
+}
+
 
 .content {
     margin-left: 250px;
