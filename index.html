@@ -7,14 +7,48 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <title>Document</title>
 </head>
 <body>
     <nav class = "sidebar">
-        <div class="logo">
-            <img src="logo.png" alt="Logo">
-        </div>
+        <header>
+            <div class="logo">
+                <img src="./assets/images/logo.png" alt="Logo">
+            </div>
+
+            <button class="sidebar-toggle">
+                <img src="./assets/icons/Arrow_Notail.svg">
+            </button>
+        </header>
     </nav>
+
+    <div class="content">
+        <header>
+            <div class="user-info">
+                <img src="rys.jpg" alt="" draggable="false" />
+                <div class="user-text">
+                <p class="name">Rohyoonseo</p>
+                <p class="email">roh.seo@gmail.com</p>
+                </div>
+            </div>
+            <div class="search-area">
+                <div class="search-box">
+                <i class="fas fa-search" aria-hidden="true"></i>
+                <input type="search" placeholder="Search Anything" aria-label="Search Anything" />
+                </div>
+            </div>
+            <div class="icon-buttons">
+                <button class="icon-btn" aria-label="Refresh">
+                    <i class="fas fa-sync-alt" aria-hidden="true"></i>
+                </button>
+                <button class="icon-btn" aria-label="More options">
+                    <i class="fas fa-ellipsis-h" aria-hidden="true"></i>
+                </button>
+            </div>
+        </header>
+    </div>
+
 </body>
 <script src="script.js"></script>
 </html>
