@@ -2,7 +2,6 @@
     --body-color: #F8F6FC;
     --white-color: #FFFFFF;
     --primary-color: #625AFF;
-    --primary-color-rgb: 90, 90, 255;
     --text-color: #251B5A;
     --border-color: #E4E3EB;
 }
@@ -76,24 +75,15 @@ body {
     padding: 20px 0;
 }
 
-.menu-bar{
-    height: 100%;
-}
-
-.menu{
-    height: calc(100% - 100px);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.menu-link {
+.sidebar ul{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.nav-link {
+.sidebar li {
     height: 56px;
     width: 80%;
+    background-color: red;
     list-style: none;
     display: flex;
     align-items: center;
@@ -101,38 +91,108 @@ body {
     border-radius: 8px;
 }
 
-.nav-link.active{
-    background-color: rgba(var(--primary-color-rgb), 0.16);
-}
-
-.nav-link a {
+.sidebar li a {
     height: 100%;
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-
-
-.nav-link .material-symbols-rounded {
-    font-size: 1.5rem;
-    font-weight: 400;
-    opacity: 64%;
+.sidebar li .material-icons {
+    height: 64px;
+    fill: white;
 }
-
-.nav-link.nav-link.active .material-symbols-rounded{
-    color: var(--primary-color);
-    opacity: 100%;
-}
-
-.nav-link .nav-text{
-    font-weight: 600;
-}
-
 
 .content {
     margin-left: 250px;
     padding: 20px;
 }
 
+header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 24px;
+  padding: 0 24px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.user-info img {
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-text p:first-child {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.user-text p:last-child {
+  margin: 4px 0 0;
+  font-size: 16px;
+  color: #7e7e9f;
+  line-height: 1.2;
+}
+
+.search-area {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 600px; /* Increased width */
+  margin: 0 auto;
+}
+
+.search-box {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 9999px;
+  padding: 12px 20px; 
+}
+
+.search-box i {
+  color: #7e7e9f;
+  font-size: 16px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  margin-left: 12px;
+  font-size: 16px; 
+  color: #7e7e9f;
+  background-color: transparent;
+  width: 100%;
+}
+
+.icon-buttons {
+  display: flex;
+  gap: 75px;
+  align-items: center;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  color: #7e7e9f;
+  font-size: 18px;
+}
+
+.icon-btn:hover {
+  color: var(--primary-color);
+}
 
