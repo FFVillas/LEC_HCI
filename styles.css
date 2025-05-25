@@ -91,9 +91,9 @@ header {
   padding: 12px 20px; 
 }
 
-.search-box i {
+.search-box span {
   color: #7e7e9f;
-  font-size: 16px;
+  font-size: 24px;
 }
 
 .search-box input {
