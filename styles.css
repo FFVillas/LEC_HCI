@@ -3,12 +3,14 @@
     --white-color: #FFFFFF;
     --primary-color: #625AFF;
     --text-color: #251B5A;
+    --border-color: #E4E3EB;
 }
 
-html, body {
+/* ===== UNIVERSAL STYLES ===== */
+* {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Nunito-Sans', sans-serif;
   box-sizing: border-box;
 }
 
@@ -21,4 +23,89 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   font-size: 16px;
+  height: 100vh;
 }
+
+/* ===== REUSABLE CSS ===== */
+.sidebar-toggle{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 50%;
+    right: -16px;
+    transform: translateY(-50%);
+    border: 2px solid var(--border-color);
+    border-radius: 120%;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.sidebar-toggle .material-symbols{
+    font-size: 1.5rem;
+    transform: scaleX(-1);
+    display: block;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: var(--white-color);
+}
+
+.sidebar header{
+    position: relative
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 72%;
+    height: auto;
+    padding: 20px 0;
+}
+
+.sidebar ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebar li {
+    height: 56px;
+    width: 80%;
+    background-color: red;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 8px;
+}
+
+.sidebar li a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.sidebar li .material-icons {
+    height: 64px;
+    fill: white;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+
