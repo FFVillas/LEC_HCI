@@ -1,0 +1,24 @@
+:root{
+    --body-color: #F8F6FC;
+    --white-color: #FFFFFF;
+    --primary-color: #625AFF;
+    --text-color: #251B5A;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+  font-size: 16px;
+}
