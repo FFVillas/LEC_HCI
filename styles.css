@@ -25,7 +25,6 @@ body {
   color: var(--text-color);
   font-size: 16px;
   height: 100vh;
-
 }
 
 /* ===== REUSABLE CSS ===== */
@@ -50,33 +49,6 @@ body {
     transform: scaleX(-1);
     display: block;
 }
-
-=======
-}
-
-/* ===== REUSABLE CSS ===== */
-.sidebar-toggle{
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    top: 50%;
-    right: -16px;
-    transform: translateY(-50%);
-    border: 2px solid var(--border-color);
-    border-radius: 120%;
-    background-color: var(--white-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.sidebar-toggle .material-symbols{
-    font-size: 1.5rem;
-    transform: scaleX(-1);
-    display: block;
-}
-
 
 /* ===== SIDEBAR ===== */
 .sidebar{
@@ -157,11 +129,7 @@ body {
     font-weight: 600;
 }
 
-
 /* --------header---------- */
-
-
-
 .content {
     margin-left: 250px;
     padding: 20px;
@@ -255,7 +223,6 @@ body {
 .icon-btn:hover {
   color: var(--primary-color);
 }
-
 
 h1 {
   font-weight: 600;
@@ -483,4 +450,3 @@ h2 {
 .recent-footer button:hover {
   color: #5c5cff;
 }
-
