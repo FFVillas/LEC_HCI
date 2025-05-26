@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,0" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -24,14 +25,16 @@
             </button>
         </header>
         <div class="menu-bar">
-            <div class="highlight-button">
-                <button class="nav-link purple-button">
-                    <span class="material-symbols-rounded">add</span>
-                    <span class="text nav-text">New Project</span>
-                </button>
-            </div>
+
             <div class="menu">
                 <ul class="menu-link">
+                    <li class="nav-link purple-button">
+                        <a href="#">
+                            <span class="material-symbols-rounded">add</span>
+                            <span class="text nav-text">New Project</span>
+                        </a>
+                    </li>
+
                     <li class="nav-link active">
                         <a href="#">
                             <span class="material-symbols-rounded">home</span>
@@ -100,85 +103,134 @@
                 </div>
             </div>
         </header>
-        <div class="quiz-section">
-            <!-- Question navigation -->
-            <div class="quiz-nav">
-                <button class="nav-btn correct">1</button>
-                <button class="nav-btn correct">2</button>
-                <button class="nav-btn correct">3</button>
-                <button class="nav-btn incorrect">4</button>
-                <button class="nav-btn correct">5</button>
-                <button class="nav-btn correct">6</button>
-                <button class="nav-btn incorrect">7</button>
-                <button class="nav-btn correct">8</button>
-                <button class="nav-btn correct">9</button>
-                <button class="nav-btn current">10</button>
-                <button class="nav-btn">11</button>
-                <button class="nav-btn">12</button>
-                <button class="nav-btn">13</button>
-                <button class="nav-btn">14</button>
-                <button class="nav-btn">15</button>
-                <button class="nav-btn">16</button>
-                <button class="nav-btn">17</button>
-                <button class="nav-btn">18</button>
-                <button class="nav-btn">19</button>
-                <button class="nav-btn">20</button>
-                <button class="nav-btn">21</button>
-                <button class="nav-btn">22</button>
-                <button class="nav-btn">23</button>
-                <button class="nav-btn">24</button>
-                <button class="nav-btn">25</button>
-                <button class="nav-btn">26</button>
-                <button class="nav-btn">27</button>
-                <button class="nav-btn">28</button>
-                <button class="nav-btn">29</button>
-                <button class="nav-btn">30</button>
-                <button class="nav-btn">31</button>
-                <button class="nav-btn">32</button>
-                <button class="nav-btn">33</button>
-                <button class="nav-btn">34</button>
-                <button class="nav-btn">35</button>
-            </div>
+        <div class="full-section">
+            <div class="quiz-section">
+                <!-- Question navigation -->
+                <div class="quiz-progress">
+                    <div class="quiz-nav">
+                        <button class="nav-btn correct">1</button>
+                        <button class="nav-btn correct">2</button>
+                        <button class="nav-btn correct">3</button>
+                        <button class="nav-btn incorrect">4</button>
+                        <button class="nav-btn correct">5</button>
+                        <button class="nav-btn correct">6</button>
+                        <button class="nav-btn incorrect">7</button>
+                        <button class="nav-btn correct">8</button>
+                        <button class="nav-btn correct">9</button>
+                        <button class="nav-btn current">10</button>
+                        <button class="nav-btn">11</button>
+                        <button class="nav-btn">12</button>
+                        <button class="nav-btn">13</button>
+                        <button class="nav-btn">14</button>
+                        <button class="nav-btn">15</button>
+                        <button class="nav-btn">16</button>
+                        <button class="nav-btn">17</button>
+                        <button class="nav-btn">18</button>
+                        <button class="nav-btn">19</button>
+                        <button class="nav-btn">20</button>
+                        <button class="nav-btn">21</button>
+                        <button class="nav-btn">22</button>
+                        <button class="nav-btn">23</button>
+                        <button class="nav-btn">24</button>
+                        <button class="nav-btn">25</button>
+                        <button class="nav-btn">26</button>
+                        <button class="nav-btn">27</button>
+                        <button class="nav-btn">28</button>
+                        <button class="nav-btn">29</button>
+                        <button class="nav-btn">30</button>
+                        <button class="nav-btn">31</button>
+                        <button class="nav-btn">32</button>
+                        <button class="nav-btn">33</button>
+                        <button class="nav-btn">34</button>
+                        <button class="nav-btn">35</button>
+                    </div>
+                </div>
+                <div class="quiz-content">
+                    <div class ="quiz-title">
+                        <span class="material-symbols">chevron_right</span>
+                        <h2 class="title-name">Quiz</h2>
+                    </div>
+                                <!-- Progress bar -->
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                        <span class="progress-text">26%</span>
+                    </div>
 
-            <!-- Progress bar -->
-            <div class="progress-container">
-                <div class="progress-bar">
-                    <div class="progress"></div>
-                </div>
-                <span class="progress-text">26%</span>
-            </div>
+                    <!-- Question text -->
+                    <div class="question">
+                        <h3 class="question-meta">Question 10 of 35</h3>
+                        <h2 class="question-text">
+                        Which of the following best describes the purpose of the Secure Software Development Life Cycle (SSDLC)?
+                        </h2>
+                    </div>
 
-            <!-- Question text -->
-            <div class="question">
-                <div class="question-meta">Question 10 of 35</div>
-                <div class="question-text">
-                Which of the following best describes the purpose of the Secure Software Development Life Cycle (SSDLC)?
-                </div>
-            </div>
+                    <!-- Answer options -->
+                    <div class="options">
+                        <div class="option correct selected">
+                        To ensure software meets only performance requirements
+                        </div>
+                        <div class="option">
+                        To integrate security practices into each phase of the software development process
+                        </div>
+                        <div class="option">
+                        To replace functional testing with security testing
+                        </div>
+                        <div class="option incorrect">
+                        To delay security considerations until after deployment
+                        </div>
+                    </div>
 
-            <!-- Answer options -->
-            <div class="options">
-                <div class="option correct selected">
-                To ensure software meets only performance requirements
-                </div>
-                <div class="option">
-                To integrate security practices into each phase of the software development process
-                </div>
-                <div class="option">
-                To replace functional testing with security testing
-                </div>
-                <div class="option incorrect">
-                To delay security considerations until after deployment
+                    <!-- Controls -->
+                    <div class="controls">
+                        <button class="btn prev">Prev</button>
+                        <button class="btn check">Check</button>
+                        <button class="btn next">Next</button>
+                    </div>
                 </div>
             </div>
+            <div class="aichat-section ai-close">
+                <button class="sidebar-toggle aichat">
+                    <span class="material-symbols">chevron_right</span>
+                </button>
+                <div class="aichat-container">
+                    <div class="aichat-title">
+                        <h2 class="aichat-name">AI Chat</h2>
+                    </div>
+                    <div class="aichat-content">
+                        <div class="aichat-message-text user">
+                            <p>Can you summarize the Secure Software Development Life Cycle (SSDLC)?</p>
+                        </div>
+                        <div class="aichat-message-text ai">
+                            <p><strong>Secure Software Development Life Cycle (SSDLC)</strong> integrates security practices into each phase of the traditional SDLC to ensure secure software delivery.</p>
 
-            <!-- Controls -->
-            <div class="controls">
-                <button class="btn prev">← Prev</button>
-                <button class="btn next">Next →</button>
-                <button class="btn check">Check</button>
+                            <p><strong>Overview:</strong> SSDLC covers all standard SDLC phases—requirements gathering, design, coding, testing, deployment, and maintenance—with security embedded into each step.</p>
+
+                            <ul>
+                                <li><strong>Requirements:</strong> Define security requirements based on threat modeling and risk assessments.</li>
+                                <li><strong>Design:</strong> Apply security principles like least privilege and defense in depth. Perform threat modeling during this phase.</li>
+                                <li><strong>Coding:</strong> Enforce secure coding standards and use static code analysis tools to catch vulnerabilities early.</li>
+                                <li><strong>Testing:</strong> Conduct security testing in parallel with functional testing to uncover potential risks and weaknesses.</li>
+                                <li><strong>Deployment:</strong> Use secure configurations and implement proper access controls to ensure a secure environment.</li>
+                                <li><strong>Maintenance:</strong> Regularly update and patch systems to address emerging threats and vulnerabilities.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="aichat-messagebox-container">
+                        <form class="aichat-messagebox">
+                            <input type="text" placeholder="Ask me anything..." />
+                            <div class="aichat-messagebox-actions">
+                                <span class="material-symbols-rounded">attach_file</span>
+                                <button class="send" type="submit">
+                                    <span class="material-symbols-rounded">send</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

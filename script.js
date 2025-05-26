@@ -7,17 +7,28 @@ const   body = document.querySelector('body'),
 
 // Toggle sidebar visibility
 let isClosed = false;
+const toggleIcon = document.querySelector('.sidebar-toggle .material-symbols');
+
 sidebar.classList.toggle('close');
 toggle.addEventListener('click', () => {
     sidebar.classList.toggle('close');
     isClosed = !isClosed;
     if(isClosed) {
         logo.src = "./assets/images/logo(no text).png";
-        content.style.marginLeft = "80px";
+        content.style.marginLeft = "78px";
+        toggleIcon.style.transform= "scaleX(1)";
     }
     else{
         logo.src = "./assets/images/logo.png";
         content.style.marginLeft = "250px";
+        toggleIcon.style.transform= "scaleX(-1)";
     }
 });
 
+// Toggle Ai Chat section visibility
+const aichatSection = document.querySelector('.aichat-section');
+const aichatToggle = document.querySelector('.sidebar-toggle.aichat');
+
+aichatToggle.addEventListener('click', () => {
+    aichatSection.classList.toggle('ai-close');
+});
