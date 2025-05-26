@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Document</title>
+</head>
+<body>
+    <nav class = "sidebar close">
+        <header>
+            <div class="logo">
+                <img id="logo-image" src="./assets/images/logo.png" alt="Logo">
+            </div>
+
+            <button class="sidebar-toggle">
+                <span class="material-symbols">chevron_right</span>
+            </button>
+        </header>
+        <div class="menu-bar">
+            <div class="highlight-button">
+                <button class="nav-link purple-button">
+                    <span class="material-symbols-rounded">add</span>
+                    <span class="text nav-text">New Project</span>
+                </button>
+            </div>
+            <div class="menu">
+                <ul class="menu-link">
+                    <li class="nav-link active">
+                        <a href="#">
+                            <span class="material-symbols-rounded">home</span>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="material-symbols-rounded">description</span>
+                            <span class="text nav-text">Notes</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="material-symbols-rounded">Folder</span>
+                            <span class="text nav-text">Projects</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="material-symbols-rounded">settings</span>
+                            <span class="text nav-text">Settings</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="menu-link">
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="material-symbols-rounded">support_agent</span>
+                            <span class="text nav-text">Support</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="material-symbols-rounded">logout</span>
+                            <span class="text nav-text">Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content quiz">
+        <header>
+            <div class="header-actions">
+                <div class="header-title">
+                    <p>Software Engineering > Secure Software ...</p>
+                </div>
+                <div class="header-buttons">
+                    <button class="star-btn" aria-label="Star">
+                        <span class="material-symbols-rounded">star</span>
+                    </button>
+                    <button class="share-btn">
+                        <span class="material-symbols-rounded">share</span>
+                        Share
+                    </button>
+                    <button class="export-btn">
+                        <span class="material-symbols-rounded">file_save</span>
+                        Export
+                    </button>
+                    <button class="more-btn" aria-label="More options">
+                        <span class="material-symbols-rounded">more_horiz</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div class="quiz-section">
+            <!-- Question navigation -->
+            <div class="quiz-nav">
+                <button class="nav-btn correct">1</button>
+                <button class="nav-btn correct">2</button>
+                <button class="nav-btn correct">3</button>
+                <button class="nav-btn incorrect">4</button>
+                <button class="nav-btn correct">5</button>
+                <button class="nav-btn correct">6</button>
+                <button class="nav-btn incorrect">7</button>
+                <button class="nav-btn correct">8</button>
+                <button class="nav-btn correct">9</button>
+                <button class="nav-btn current">10</button>
+                <button class="nav-btn">11</button>
+                <button class="nav-btn">12</button>
+                <button class="nav-btn">13</button>
+                <button class="nav-btn">14</button>
+                <button class="nav-btn">15</button>
+                <button class="nav-btn">16</button>
+                <button class="nav-btn">17</button>
+                <button class="nav-btn">18</button>
+                <button class="nav-btn">19</button>
+                <button class="nav-btn">20</button>
+                <button class="nav-btn">21</button>
+                <button class="nav-btn">22</button>
+                <button class="nav-btn">23</button>
+                <button class="nav-btn">24</button>
+                <button class="nav-btn">25</button>
+                <button class="nav-btn">26</button>
+                <button class="nav-btn">27</button>
+                <button class="nav-btn">28</button>
+                <button class="nav-btn">29</button>
+                <button class="nav-btn">30</button>
+                <button class="nav-btn">31</button>
+                <button class="nav-btn">32</button>
+                <button class="nav-btn">33</button>
+                <button class="nav-btn">34</button>
+                <button class="nav-btn">35</button>
+            </div>
+
+            <!-- Progress bar -->
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <span class="progress-text">26%</span>
+            </div>
+
+            <!-- Question text -->
+            <div class="question">
+                <div class="question-meta">Question 10 of 35</div>
+                <div class="question-text">
+                Which of the following best describes the purpose of the Secure Software Development Life Cycle (SSDLC)?
+                </div>
+            </div>
+
+            <!-- Answer options -->
+            <div class="options">
+                <div class="option correct selected">
+                To ensure software meets only performance requirements
+                </div>
+                <div class="option">
+                To integrate security practices into each phase of the software development process
+                </div>
+                <div class="option">
+                To replace functional testing with security testing
+                </div>
+                <div class="option incorrect">
+                To delay security considerations until after deployment
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="controls">
+                <button class="btn prev">← Prev</button>
+                <button class="btn next">Next →</button>
+                <button class="btn check">Check</button>
+            </div>
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
