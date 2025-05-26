@@ -14,7 +14,7 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class = "sidebar close">
+     <nav class = "sidebar close">
         <header>
             <div class="logo">
                 <img id="logo-image" src="./assets/images/logo.png" alt="Logo">
@@ -78,7 +78,7 @@
         </div>
     </nav>
 
-    <div class="content notes">
+    <div class="content quiz">
         <header>
             <div class="header-actions">
                 <div class="header-title">
@@ -102,69 +102,86 @@
                 </div>
             </div>
         </header>
+       <!-- Place this inside <div class="content quiz-home"> -->
         <div class="full-section">
-            <section class="notes-section">
-                <div class="notes-heading">
-                    <h2>🛡️ Importance of Security in Software Development</h2>
-                </div>
-                <div class="notes-text">
-                    <ul>
-                        <li>Software security is essential to protect data, user privacy, and prevent breaches that could lead to financial loss and reputation damage.</li>
-                        <li>With increasing cyber threats, security must be a priority throughout the development lifecycle.</li>
-                    </ul>
-                    <br>
-                    <p>To highlight the importance of cybersecurity, here is a meme:</p>
-                    <img src="./assets/images/notes-1.jpeg" alt="">
-                    <br>
-                    <p>The meme humorously highlights the disparity between the extensive resources and preparation of cyberattack teams versus the seemingly simplistic and inadequate measures of cybersecurity.</p>
-                </div>
-                <div class="notes-heading">
-                    <h2>🧩 Importance of Security in Software Development</h2>
-                </div>
-                <div class="notes-text">
-                    <ul>
-                        <li>Secure SDLC integrates security practices into each phase of the traditional SDLC.</li>
-                        <li>Phases include requirements gathering, design, coding, testing, deployment, and maintenance with a security focus.</li>
-                    </ul>
-                    <br>
-                    <p>Here is a diagram outlining the stages of a Secure Software Development Life Cycle (SSDLC):</p>
-                    <img src="./assets/images/notes-2.jpeg" alt="">
-                    <br>
-                    <p>The image effectively illustrates the key components of a secure software development life cycle.</p>
-                </div>
-            </section>
-            <div class="aichat-section ai-close">
-                <button class="sidebar-toggle aichat">
-                    <span class="material-symbols">chevron_right</span>
-                </button>
-                <div class="aichat-container">
-                    <div class="aichat-title">
-                        <h2 class="aichat-name">AI Chat</h2>
-                    </div>
-                    <div class="aichat-content">
-                        <!-- Example messages -->
-                        <div class="aichat-message-text user">
-                            <p>Can you summarize the Secure Software Development Life Cycle (SSDLC)?</p>
-                        </div>
-                        <div class="aichat-message-text ai">
-                            <p><strong>Secure Software Development Life Cycle (SSDLC)</strong> integrates security practices into each phase of the traditional SDLC to ensure secure software delivery.</p>
-                        </div>
-                    </div>
-                    <div class="aichat-messagebox-container">
-                        <form class="aichat-messagebox">
-                            <input type="text" placeholder="Ask me anything..." />
-                            <div class="aichat-messagebox-actions">
-                                <span class="material-symbols-rounded">attach_file</span>
-                                <button class="send" type="submit">
-                                    <span class="material-symbols-rounded">send</span>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+          <section class="quizhome-section">
+            <div class="quizhome-title-row">
+              <h1 class="quizhome-title">Quiz</h1>
+              <h2 class="quizhome-subtitle">Secure Software Development</h2>
             </div>
+            <div class="quizhome-progress-card">
+              <h3>Current Progress</h3>
+              <div class="quizhome-progress-flex">
+                <!-- Use flex for progress buttons -->
+                <button class="nav-btn correct">1</button>
+                <button class="nav-btn correct">2</button>
+                <button class="nav-btn incorrect">3</button>
+                <button class="nav-btn correct">4</button>
+                <button class="nav-btn correct">5</button>
+                <button class="nav-btn correct">6</button>
+                <button class="nav-btn incorrect">7</button>
+                <button class="nav-btn correct">8</button>
+                <button class="nav-btn correct">9</button>
+                <button class="nav-btn current">10</button>
+                <button class="nav-btn">11</button>
+                <button class="nav-btn">12</button>
+                <button class="nav-btn">13</button>
+                <button class="nav-btn">14</button>
+                <button class="nav-btn">15</button>
+                <button class="nav-btn">16</button>
+                <button class="nav-btn">17</button>
+                <button class="nav-btn">18</button>
+                <button class="nav-btn">19</button>
+                <button class="nav-btn">20</button>
+                <button class="nav-btn">21</button>
+                <button class="nav-btn">22</button>
+                <button class="nav-btn">23</button>
+                <button class="nav-btn">24</button>
+                <button class="nav-btn">25</button>
+                <button class="nav-btn">26</button>
+                <button class="nav-btn">27</button>
+                <button class="nav-btn">28</button>
+                <button class="nav-btn">29</button>
+                <button class="nav-btn">30</button>
+                <button class="nav-btn">31</button>
+                <button class="nav-btn">32</button>
+                <button class="nav-btn">33</button>
+                <button class="nav-btn">34</button>
+                <button class="nav-btn">35</button>
+              </div>
+              <div class="quizhome-progress-actions">
+                <button class="btn reset">Reset</button>
+                <button class="btn continue">Continue</button>
+              </div>
+            </div>
+            <div class="quizhome-create-card">
+              <h3>Create New Quiz</h3>
+              <form class="quizhome-create-form">
+                <div class="form-row">
+                  <label>Difficulty</label>
+                  <input type="text" value="Intermediate" readonly>
+                </div>
+                <div class="form-row">
+                  <label>Amount</label>
+                  <input type="number" value="50" readonly>
+                </div>
+                <div class="form-row">
+                  <label>Materials to Include</label>
+                  <input type="text" value="All" readonly>
+                </div>
+                <div class="form-row">
+                  <label>Timer</label>
+                  <input type="text" value="None" readonly>
+                </div>
+                <button class="btn create-quiz" type="submit">Create Quiz</button>
+              </form>
+            </div>
+          </section>
+          <div class="aichat-section ai-close">
+            <!-- ...AI chat as in other pages... -->
+          </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>

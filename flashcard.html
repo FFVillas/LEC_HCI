@@ -14,7 +14,7 @@
     <title>Document</title>
 </head>
 <body>
-<nav class = "sidebar close">
+     <nav class = "sidebar close">
         <header>
             <div class="logo">
                 <img id="logo-image" src="./assets/images/logo.png" alt="Logo">
@@ -25,38 +25,37 @@
             </button>
         </header>
         <div class="menu-bar">
-
             <div class="menu">
                 <ul class="menu-link">
-                    <li class="nav-link purple-button">
-                        <a href="#">
-                            <span class="material-symbols-rounded">add</span>
-                            <span class="text nav-text">New Project</span>
-                        </a>
-                    </li>
 
                     <li class="nav-link active">
-                        <a href="#">
-                            <span class="material-symbols-rounded">home</span>
-                            <span class="text nav-text">Dashboard</span>
-                        </a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">
-                            <span class="material-symbols-rounded">description</span>
+                        <a href="notes.html">
+                            <span class="material-symbols-rounded">article</span>
                             <span class="text nav-text">Notes</span>
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">
-                            <span class="material-symbols-rounded">Folder</span>
-                            <span class="text nav-text">Projects</span>
+                        <a href="quiz_home.html">
+                            <span class="material-symbols-rounded">lightbulb</span>
+                            <span class="text nav-text">Quiz</span>
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="flashcard.html">
+                            <span class="material-symbols-rounded">quiz</span>
+                            <span class="text nav-text">Flashcard</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="">
                             <span class="material-symbols-rounded">settings</span>
                             <span class="text nav-text">Settings</span>
+                        </a>
+                    </li>
+                    <li class="nav-link purple-button back-home">
+                        <a href="index.html">
+                            <span class="material-symbols-rounded">keyboard_backspace</span>
+                            <span class="text nav-text">Back to home</span>
                         </a>
                     </li>
                 </ul>
@@ -79,7 +78,7 @@
         </div>
     </nav>
 
-    <div class="content notes">
+    <div class="content flashcard">
         <header>
             <div class="header-actions">
                 <div class="header-title">
@@ -103,73 +102,116 @@
                 </div>
             </div>
         </header>
-        <h1 class="card-title">Flashcard</h1>
-        <section class="card-section">
-            <div class="card-counter">1/16</div>
-            
-            <div class="flashcard">
-                <button class="nav-arrow prev-btn">
-                    <span class="material-symbols-rounded">chevron_left</span>
-                </button>
-                
-                <div class="card-container">
-                    <div class="card" id="single-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <div class="card-content">
-                                    <h2>What is a key lesson from the Equifax data breach case study?</h2>
+        <div class="full-section">
+            <div class="flashcard-section">
+                <h1 class="card-title">Flashcard</h1>
+                <div class="flashcard-row-main">
+                    <div class="flashcard-content">
+                        <div class="card-counter">1/16</div>
+                        <div class="flashcard-container">
+                            <button class="nav-arrow prev-btn">
+                                <span class="material-symbols-rounded">chevron_left</span>
+                            </button>
+                            <div class="card-container">
+                                <div class="card" id="single-card">
+                                    <div class="card-inner">
+                                        <div class="card-front">
+                                            <div class="card-content">
+                                                <h2>What is a key lesson from the Equifax data breach case study?</h2>
+                                            </div>
+                                        </div>
+                                        <div class="card-back">
+                                            <div class="card-content">
+                                                <p>The importance of timely patching, regular security testing, and continuous monitoring.</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card-back">
-                                <div class="card-content">
-                                    <p>The importance of timely patching, regular security testing, and continuous monitoring.</p>
+                                <div class="all-cards" id="all-cards" style="display: none;">
+                                    <div class="card-grid">
+                                        <div class="qa-card">
+                                            <div class="question">What is a key lesson from the Equifax data breach case study?</div>
+                                            <div class="divider"></div>
+                                            <div class="answer">To encode data in a one-way manner, often used to securely store passwords.</div>
+                                        </div>
+                                        <div class="qa-card">
+                                            <div class="question">What is the purpose of hashing in security practices?</div>
+                                            <div class="divider"></div>
+                                            <div class="answer">To encode data in a one-way manner, often used to securely store passwords.</div>
+                                        </div>
+                                        <div class="qa-card">
+                                            <div class="question">What is a key lesson from the Equifax data breach case study?</div>
+                                            <div class="divider"></div>
+                                            <div class="answer">To encode data in a one-way manner, often used to securely store passwords.</div>
+                                        </div>
+                                        <div class="qa-card">
+                                            <div class="question">What is the purpose of hashing in security practices?</div>
+                                            <div class="divider"></div>
+                                            <div class="answer">To encode data in a one-way manner, often used to securely store passwords.</div>
+                                        </div>
+                                        <div class="qa-card">
+                                            <div class="question">What is a key lesson from the Equifax data breach case study?</div>
+                                            <div class="divider"></div>
+                                            <div class="answer">To encode data in a one-way manner, often used to securely store passwords.</div>
+                                        </div>
+                                        <div class="qa-card">
+                                            <div class="question">What is the purpose of hashing in security practices?</div>
+                                            <div class="divider"></div>
+                                            <div class="answer">To encode data in a one-way manner, often used to securely store passwords.</div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <button class="show-answer" id="show-all-btn">Show All</button>
                             </div>
+                            <button class="nav-arrow next-btn">
+                                <span class="material-symbols-rounded">chevron_right</span>
+                            </button>
                         </div>
                     </div>
-                    <div class="all-cards" id="all-cards" style="display: none;">
-                        <div class="card-grid">
-                            <div class="qa-card">
-                                <div class="question">What is a key lesson from the Equifax data breach case study?</div>
-                                <div class="divider"></div>
-                                <div class="answer">To encode data in a one-way manner, often used to securely store passwords.</div>
-                            </div>
-                            <div class="qa-card">
-                                <div class="question">What is the purpose of hashing in security practices?</div>
-                                <div class="divider"></div>
-                                <div class="answer">To encode data in a one-way manner, often used to securely store passwords.</div>
-                            </div>
-                            <div class="qa-card">
-                                <div class="question">What is a key lesson from the Equifax data breach case study?</div>
-                                <div class="divider"></div>
-                                <div class="answer">To encode data in a one-way manner, often used to securely store passwords.</div>
-                            </div>
-                            <div class="qa-card">
-                                <div class="question">What is the purpose of hashing in security practices?</div>
-                                <div class="divider"></div>
-                                <div class="answer">To encode data in a one-way manner, often used to securely store passwords.</div>
-                            </div>
-                            <div class="qa-card">
-                                <div class="question">What is a key lesson from the Equifax data breach case study?</div>
-                                <div class="divider"></div>
-                                <div class="answer">To encode data in a one-way manner, often used to securely store passwords.</div>
-                            </div>
-                            <div class="qa-card">
-                                <div class="question">What is the purpose of hashing in security practices?</div>
-                                <div class="divider"></div>
-                                <div class="answer">To encode data in a one-way manner, often used to securely store passwords.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="show-answer" id="show-all-btn">Show All</button>
                 </div>
-
-                <button class="nav-arrow next-btn">
-                    <span class="material-symbols-rounded">chevron_right</span>
-                </button>
             </div>
-        </section>
+            <div class="aichat-section ai-close">
+                    <button class="sidebar-toggle aichat">
+                        <span class="material-symbols">chevron_right</span>
+                    </button>
+                    <div class="aichat-container">
+                        <div class="aichat-title">
+                            <h2 class="aichat-name">AI Chat</h2>
+                        </div>
+                        <div class="aichat-content">
+                            <div class="aichat-message-text user">
+                                <p>Can you summarize the Secure Software Development Life Cycle (SSDLC)?</p>
+                            </div>
+                            <div class="aichat-message-text ai">
+                                <p><strong>Secure Software Development Life Cycle (SSDLC)</strong> integrates security practices into each phase of the traditional SDLC to ensure secure software delivery.</p>
+
+                                <p><strong>Overview:</strong> SSDLC covers all standard SDLC phases—requirements gathering, design, coding, testing, deployment, and maintenance—with security embedded into each step.</p>
+
+                                <ul>
+                                    <li><strong>Requirements:</strong> Define security requirements based on threat modeling and risk assessments.</li>
+                                    <li><strong>Design:</strong> Apply security principles like least privilege and defense in depth. Perform threat modeling during this phase.</li>
+                                    <li><strong>Coding:</strong> Enforce secure coding standards and use static code analysis tools to catch vulnerabilities early.</li>
+                                    <li><strong>Testing:</strong> Conduct security testing in parallel with functional testing to uncover potential risks and weaknesses.</li>
+                                    <li><strong>Deployment:</strong> Use secure configurations and implement proper access controls to ensure a secure environment.</li>
+                                    <li><strong>Maintenance:</strong> Regularly update and patch systems to address emerging threats and vulnerabilities.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="aichat-messagebox-container">
+                            <form class="aichat-messagebox">
+                                <input type="text" placeholder="Ask me anything..." />
+                                <div class="aichat-messagebox-actions">
+                                    <span class="material-symbols-rounded">attach_file</span>
+                                    <button class="send" type="submit">
+                                        <span class="material-symbols-rounded">send</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
