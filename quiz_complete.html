@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz Complete</title>
+</head>
+<body>
+    <nav class = "sidebar close">
+        <header>
+            <div class="logo">
+                <img id="logo-image" src="./assets/images/logo.png" alt="Logo">
+            </div>
+
+            <button class="sidebar-toggle">
+                <span class="material-symbols">chevron_right</span>
+            </button>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-link">
+
+                    <li class="nav-link active">
+                        <a href="notes.html">
+                            <span class="material-symbols-rounded">article</span>
+                            <span class="text nav-text">Notes</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="quiz_home.html">
+                            <span class="material-symbols-rounded">lightbulb</span>
+                            <span class="text nav-text">Quiz</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="flashcard.html">
+                            <span class="material-symbols-rounded">quiz</span>
+                            <span class="text nav-text">Flashcard</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="">
+                            <span class="material-symbols-rounded">settings</span>
+                            <span class="text nav-text">Settings</span>
+                        </a>
+                    </li>
+                    <li class="nav-link purple-button back-home">
+                        <a href="index.html">
+                            <span class="material-symbols-rounded">keyboard_backspace</span>
+                            <span class="text nav-text">Back to home</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="menu-link">
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="material-symbols-rounded">support_agent</span>
+                            <span class="text nav-text">Support</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="material-symbols-rounded">logout</span>
+                            <span class="text nav-text">Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="content quiz">
+        <header>
+            <div class="header-actions">
+                <div class="header-title">
+                    <p>Software Engineering &gt; Secure Software ... &gt; Quiz</p>
+                </div>
+                <div class="header-buttons">
+                    <button class="star-btn" aria-label="Star">
+                        <span class="material-symbols-rounded">star</span>
+                    </button>
+                    <button class="share-btn">
+                        <span class="material-symbols-rounded">share</span>
+                        Share
+                    </button>
+                    <button class="export-btn">
+                        <span class="material-symbols-rounded">file_save</span>
+                        Export
+                    </button>
+                    <button class="more-btn" aria-label="More options">
+                        <span class="material-symbols-rounded">more_horiz</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div class="full-section">
+            <section class="quizcomplete-section">
+                <div class="quizcomplete-main">
+                    <h2 class="quizcomplete-result">
+                        You got <span class="quizcomplete-correct">16</span> of <span class="quizcomplete-total">35</span> questions correct!
+                    </h2>
+                    <p class="quizcomplete-advice">Aim for 70% or more correct answer next time.</p>
+                        <div class="circular-progress">
+                            <svg class="progress-ring" width="300" height="300">
+                                <circle class="progress-background" cx="150" cy="150" r="135"></circle>
+                                <circle class="progress-bar" cx="150" cy="150" r="135"></circle>
+                            </svg>
+                            <div class="progress-content">
+                                <div class="emoji-container">
+                                    <!-- Replace src with your emoji image -->
+                                    <img src="./assets/images/Smile_Emoji.png" alt="Emoji" class="emoji">
+                                </div>
+                                <div class="percentage">45%</div>
+                            </div>
+                        </div>
+                    <div class="quizcomplete-actions">
+                        <button class="btn review">Review</button>
+                        <button class="btn retry">Retry</button>
+                    </div>
+                    <div class="quizcomplete-progress-card">
+                        <div class="quizhome-progress-flex">
+                            <!-- Use flex for progress buttons, just like quiz_home -->
+                            <button class="nav-btn correct">1</button>
+                            <button class="nav-btn correct">2</button>
+                            <button class="nav-btn incorrect">3</button>
+                            <button class="nav-btn correct">4</button>
+                            <button class="nav-btn correct">5</button>
+                            <button class="nav-btn correct">6</button>
+                            <button class="nav-btn incorrect">7</button>
+                            <button class="nav-btn correct">8</button>
+                            <button class="nav-btn correct">9</button>
+                            <button class="nav-btn correct">10</button>
+                            <button class="nav-btn correct">11</button>
+                            <button class="nav-btn correct">12</button>
+                            <button class="nav-btn correct">13</button>
+                            <button class="nav-btn correct">14</button>
+                            <button class="nav-btn correct">15</button>
+                            <button class="nav-btn correct">16</button>
+                            <button class="nav-btn incorrect">17</button>
+                            <button class="nav-btn incorrect">18</button>
+                            <button class="nav-btn incorrect">19</button>
+                            <button class="nav-btn incorrect">20</button>
+                            <button class="nav-btn incorrect">21</button>
+                            <button class="nav-btn incorrect">22</button>
+                            <button class="nav-btn incorrect">23</button>
+                            <button class="nav-btn incorrect">24</button>
+                            <button class="nav-btn incorrect">25</button>
+                            <button class="nav-btn incorrect">26</button>
+                            <button class="nav-btn incorrect">27</button>
+                            <button class="nav-btn incorrect">28</button>
+                            <button class="nav-btn incorrect">29</button>
+                            <button class="nav-btn incorrect">30</button>
+                            <button class="nav-btn incorrect">31</button>
+                            <button class="nav-btn incorrect">32</button>
+                            <button class="nav-btn incorrect">33</button>
+                            <button class="nav-btn incorrect">34</button>
+                            <button class="nav-btn incorrect">35</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="aichat-section ai-close">
+                <!-- ...AI chat as in other pages... -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
