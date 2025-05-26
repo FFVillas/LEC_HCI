@@ -14,10 +14,10 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class = "sidebar">
+    <nav class = "sidebar close">
         <header>
             <div class="logo">
-                <img src="./assets/images/logo.png" alt="Logo">
+                <img id="logo-image" src="./assets/images/logo.png" alt="Logo">
             </div>
 
             <button class="sidebar-toggle">
@@ -25,30 +25,38 @@
             </button>
         </header>
         <div class="menu-bar">
+
             <div class="menu">
                 <ul class="menu-link">
+                    <li class="nav-link purple-button">
+                        <a href="#">
+                            <span class="material-symbols-rounded">add</span>
+                            <span class="text nav-text">New Project</span>
+                        </a>
+                    </li>
+
                     <li class="nav-link active">
                         <a href="#">
                             <span class="material-symbols-rounded">home</span>
-                            <span class="nav-text">Dashboard</span>
+                            <span class="text nav-text">Dashboard</span>
                         </a>
                     </li>
                     <li class="nav-link">
                         <a href="#">
                             <span class="material-symbols-rounded">description</span>
-                            <span class="nav-text">Notes</span>
+                            <span class="text nav-text">Notes</span>
                         </a>
                     </li>
                     <li class="nav-link">
                         <a href="#">
                             <span class="material-symbols-rounded">Folder</span>
-                            <span class="nav-text">Projects</span>
+                            <span class="text nav-text">Projects</span>
                         </a>
                     </li>
                     <li class="nav-link">
                         <a href="#">
                             <span class="material-symbols-rounded">settings</span>
-                            <span class="nav-text">Settings</span>
+                            <span class="text nav-text">Settings</span>
                         </a>
                     </li>
                 </ul>
@@ -57,13 +65,13 @@
                     <li class="nav-link">
                         <a href="#">
                             <span class="material-symbols-rounded">support_agent</span>
-                            <span class="nav-text">Support</span>
+                            <span class="text nav-text">Support</span>
                         </a>
                     </li>
                     <li class="nav-link">
                         <a href="#">
                             <span class="material-symbols-rounded">logout</span>
-                            <span class="nav-text">Logout</span>
+                            <span class="text nav-text">Logout</span>
                         </a>
                     </li>
                 </ul>
@@ -208,6 +216,6 @@
             </div>
         </section>
     </div>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
