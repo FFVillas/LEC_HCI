@@ -58,7 +58,23 @@ body {
     height: 100%;
     width: 250px;
     background-color: var(--white-color);
+    transition: all 0.2s ease;
 }
+
+.sidebar .text{
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+/* SIDEBAR CLOSED */
+.sidebar.close {
+  width: 78px;
+}
+
+.sidebar.close .text {
+  display: none;
+}
+
+
 
 .sidebar header{
     position: relative
@@ -71,9 +87,10 @@ body {
 }
 
 .logo img{
-    width: 72%;
-    height: auto;
+    width: auto;
+    height: 72px;
     padding: 20px 0;
+    display: block
 }
 
 .menu-bar{
@@ -86,6 +103,14 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
+
+.highlight-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
 .menu-link {
     display: flex;
     flex-direction: column;
@@ -99,7 +124,9 @@ body {
     align-items: center;
     padding: 0 16px;
     border-radius: 8px;
+    border-color: #625AFF;
 }
+
 
 .nav-link.active{
     background-color: rgba(var(--primary-color-rgb), 0.16);
@@ -111,8 +138,6 @@ body {
     align-items: center;
     gap: 12px;
 }
-
-
 
 .nav-link .material-symbols-rounded {
     font-size: 1.5rem;
@@ -127,14 +152,49 @@ body {
 
 .nav-link .nav-text{
     font-weight: 600;
+    color: #7e7e9f;
+}
+
+.purple-button {
+    height: 48px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    line-height: 24px;
+    padding: 12px 20px;
+    opacity: 100%;
+    border: none;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.purple-button .material-symbols-rounded {
+    font-size: 1.2rem;
+    color: var(--white-color);
+    margin-right: 4px;
+    opacity: 100%;
+}
+
+.purple-button .nav-text {
+    color: var(--white-color);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.sidebar.close .nav-link {
+  justify-content: center;
+}
+
+.sidebar.close .purple-button .material-symbols-rounded {
+  margin-right: 0;
 }
 
 
+/* ===== Dashboard Content ===== */
 .content {
     margin-left: 250px;
     padding: 20px;
+    transition: all 0.2s ease;
 }
-
 
 .content header {
   display: grid;

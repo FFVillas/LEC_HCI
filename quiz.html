@@ -24,16 +24,14 @@
             </button>
         </header>
         <div class="menu-bar">
-
+            <div class="highlight-button">
+                <button class="nav-link purple-button">
+                    <span class="material-symbols-rounded">add</span>
+                    <span class="text nav-text">New Project</span>
+                </button>
+            </div>
             <div class="menu">
                 <ul class="menu-link">
-                    <li class="nav-link purple-button">
-                        <a href="#">
-                            <span class="material-symbols-rounded">add</span>
-                            <span class="text nav-text">New Project</span>
-                        </a>
-                    </li>
-
                     <li class="nav-link active">
                         <a href="#">
                             <span class="material-symbols-rounded">home</span>
@@ -102,6 +100,60 @@
                 </button>
             </div>
         </header>
+        <div class="quiz">
+            <!-- Question navigation -->
+            <div class="quiz-nav">
+                <!-- Example: 1–35 -->
+                <!-- Add classes: .answered, .current, .correct, .incorrect as needed -->
+                <button class="nav-btn answered">1</button>
+                <button class="nav-btn answered">2</button>
+                <button class="nav-btn answered">3</button>
+                <button class="nav-btn incorrect">4</button>
+                <button class="nav-btn answered">5</button>
+                <button class="nav-btn answered">6</button>
+                <button class="nav-btn incorrect">7</button>
+                <button class="nav-btn answered">8</button>
+                <button class="nav-btn answered">9</button>
+                <button class="nav-btn current">10</button>
+                <!-- … up to 35 -->
+            </div>
+
+            <!-- Progress bar -->
+            <div class="progress-bar">
+                <div class="progress" style="width: 26%;"></div>
+            </div>
+
+            <!-- Question text -->
+            <div class="question">
+                <div class="question-meta">Question 10 of 35</div>
+                <div class="question-text">
+                Which of the following best describes the purpose of the Secure Software Development Life Cycle (SSDLC)?
+                </div>
+            </div>
+
+            <!-- Answer options -->
+            <div class="options">
+                <div class="option correct selected">
+                To ensure software meets only performance requirements
+                </div>
+                <div class="option">
+                To integrate security practices into each phase of the software development process
+                </div>
+                <div class="option">
+                To replace functional testing with security testing
+                </div>
+                <div class="option incorrect">
+                To delay security considerations until after deployment
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="controls">
+                <button class="btn prev">← Prev</button>
+                <button class="btn next">Next →</button>
+                <button class="btn check">Check</button>
+            </div>
+            </div>
     </div>
     <script src="script.js"></script>
 </body>
