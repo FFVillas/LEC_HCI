@@ -58,37 +58,3 @@ document.addEventListener('DOMContentLoaded', function() {
         showAllBtn.style.display = 'none';
     });
 });
-
-//card flipped
-const card = document.querySelector('.card');
-function flipCard() {
-    card.classList.toggle('flipped');
-    if (card.classList.contains('flipped')) {
-        showAnswerBtn.textContent = 'Show Question';
-    } else {
-        showAnswerBtn.textContent = 'Show Answer';
-    }
-}
-card.addEventListener('click', flipCard);
-
-document.addEventListener('DOMContentLoaded', function() {
-    const showAllBtn = document.getElementById('show-all-btn');
-    const allCards = document.getElementById('all-cards');
-
-    showAllBtn.addEventListener('click', function(){
-
-        // Show all cards
-        allCards.style.display = 'block';
-        
-        // Hide the button itself
-        showAllBtn.style.display = 'none';
-    });
-});
-
-// Toggle Ai Chat section visibility
-const aichatSection = document.querySelector('.aichat-section');
-const aichatToggle = document.querySelector('.sidebar-toggle.aichat');
-
-aichatToggle.addEventListener('click', () => {
-    aichatSection.classList.toggle('ai-close');
-});
