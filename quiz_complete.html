@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Symbols" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css">
-    <title>Quiz Complete</title>
+    <title>Quiz</title>
 </head>
 <body>
     <nav class = "sidebar close">
@@ -32,7 +32,7 @@
                             <span class="text nav-text">Notes</span>
                         </a>
                     </li>
-                    <li class="nav-link">
+                    <li class="nav-link active">
                         <a href="quiz_home.html">
                             <span class="material-symbols-rounded">lightbulb</span>
                             <span class="text nav-text">Quiz</span>
@@ -103,7 +103,7 @@
             <section class="quizcomplete-section">
                 <div class="quizcomplete-main">
                     <h2 class="quizcomplete-result">
-                        You got <span class="quizcomplete-correct">16</span> of <span class="quizcomplete-total">35</span> questions correct!
+                        You got <span class="quizcomplete-correct"></span> of <span class="quizcomplete-total"></span> questions correct!
                     </h2>
                     <p class="quizcomplete-advice">Aim for 70% or more correct answer next time.</p>
                         <div class="circular-progress">
@@ -116,51 +116,18 @@
                                     <!-- Replace src with your emoji image -->
                                     <img src="./assets/images/Smile_Emoji.png" alt="Emoji" class="emoji">
                                 </div>
-                                <div class="percentage">45%</div>
+                                <div class="percentage"></div> <!-- Remove static percentage -->
                             </div>
                         </div>
                     <div class="quizcomplete-actions">
                         <button class="btn review">Review</button>
+                        <button class="btn new-quiz">New Quiz</button> <!-- Add this button -->
                         <button class="btn retry">Retry</button>
                     </div>
                     <div class="quizcomplete-progress-card">
                         <div class="quizhome-progress-flex">
-                            <!-- Use flex for progress buttons, just like quiz_home -->
-                            <button class="nav-btn correct">1</button>
-                            <button class="nav-btn correct">2</button>
-                            <button class="nav-btn incorrect">3</button>
-                            <button class="nav-btn correct">4</button>
-                            <button class="nav-btn correct">5</button>
-                            <button class="nav-btn correct">6</button>
-                            <button class="nav-btn incorrect">7</button>
-                            <button class="nav-btn correct">8</button>
-                            <button class="nav-btn correct">9</button>
-                            <button class="nav-btn correct">10</button>
-                            <button class="nav-btn correct">11</button>
-                            <button class="nav-btn correct">12</button>
-                            <button class="nav-btn correct">13</button>
-                            <button class="nav-btn correct">14</button>
-                            <button class="nav-btn correct">15</button>
-                            <button class="nav-btn correct">16</button>
-                            <button class="nav-btn incorrect">17</button>
-                            <button class="nav-btn incorrect">18</button>
-                            <button class="nav-btn incorrect">19</button>
-                            <button class="nav-btn incorrect">20</button>
-                            <button class="nav-btn incorrect">21</button>
-                            <button class="nav-btn incorrect">22</button>
-                            <button class="nav-btn incorrect">23</button>
-                            <button class="nav-btn incorrect">24</button>
-                            <button class="nav-btn incorrect">25</button>
-                            <button class="nav-btn incorrect">26</button>
-                            <button class="nav-btn incorrect">27</button>
-                            <button class="nav-btn incorrect">28</button>
-                            <button class="nav-btn incorrect">29</button>
-                            <button class="nav-btn incorrect">30</button>
-                            <button class="nav-btn incorrect">31</button>
-                            <button class="nav-btn incorrect">32</button>
-                            <button class="nav-btn incorrect">33</button>
-                            <button class="nav-btn incorrect">34</button>
-                            <button class="nav-btn incorrect">35</button>
+                            <!-- Remove all static nav-btn elements here -->
+                            <!-- The JavaScript will generate these dynamically -->
                         </div>
                     </div>
                 </div>

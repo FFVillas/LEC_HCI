@@ -759,6 +759,7 @@ h2 {
 
 .nav-btn.current {
   border-color: var(--primary-color);
+  background: #ecebff; /* Added background for current */
 }
 
 
@@ -870,17 +871,18 @@ h2 {
 }
 .option {
   padding: 0.75rem 1rem;
-  border: 1.5px solid var(--border-color);
+  border: 2px solid var(--border-color);
   border-radius: 6px;
   cursor: pointer;
   background: #fff;
   transition: background-color 0.2s, border-color 0.2s;
 }
 .option:hover {
-  border-color: #888;
+  border-color: #7e7e9f;
 }
 .option.selected {
-  background: #e2e6ea;
+  background: #ECEBFF;
+  border: 2px solid var(--primary-color);
 }
 .option.correct {
   background: #d4edda;
@@ -1435,6 +1437,7 @@ h2 {
 
 .nav-btn.current {
     border-color: var(--primary-color);
+    background: #ecebff; /* Added background for current */
 }
 
 .quizhome-progress-actions {
@@ -1505,7 +1508,7 @@ h2 {
     font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: all 0.2s ease;
     max-width: 100%;
 }
 
@@ -1585,10 +1588,16 @@ h2 {
     font-weight: 700;
     border: none;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: all 0.2s;
 }
 
 .quizcomplete-actions .btn.review {
+    background: var(--white-color);
+    color: var(--text-color);
+    border: 2px solid var(--border-color);
+}
+
+.quizcomplete-actions .btn.new-quiz{
     background: var(--white-color);
     color: var(--text-color);
     border: 2px solid var(--border-color);
@@ -1627,7 +1636,7 @@ h2 {
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: background 0.2s, border-color 0.2s;
+    transition: all 0.2s, border-color 0.2s;
     color: var(--text-color);
     display: flex;
     align-items: center;
@@ -1676,7 +1685,7 @@ h2 {
     stroke-linecap: round;
     stroke-dasharray: 636; /* 3/4 of full circle circumference */
     stroke-dashoffset: 424;
-    transition: stroke-dashoffset 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .progress-content {
@@ -1710,6 +1719,6 @@ h2 {
     color: #000;
 }
 
-        .animate .progress-bar {
-            stroke-dashoffset: 350; /* 424 - (424 * 0.45) for 45% */
-        }
+.animate .progress-bar {
+    stroke-dashoffset: 350; /* 424 - (424 * 0.45) for 45% */
+}
