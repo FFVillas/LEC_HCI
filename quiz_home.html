@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,0" rel="stylesheet">
-    <title>Document</title>
+    <title>Quiz</title>
 </head>
 <body>
      <nav class = "sidebar close">
@@ -112,42 +112,8 @@
             <div class="quizhome-progress-card">
               <h3>Current Progress</h3>
               <div class="quizhome-progress-flex">
-                <!-- Use flex for progress buttons -->
-                <button class="nav-btn correct">1</button>
-                <button class="nav-btn correct">2</button>
-                <button class="nav-btn incorrect">3</button>
-                <button class="nav-btn correct">4</button>
-                <button class="nav-btn correct">5</button>
-                <button class="nav-btn correct">6</button>
-                <button class="nav-btn incorrect">7</button>
-                <button class="nav-btn correct">8</button>
-                <button class="nav-btn correct">9</button>
-                <button class="nav-btn current">10</button>
-                <button class="nav-btn">11</button>
-                <button class="nav-btn">12</button>
-                <button class="nav-btn">13</button>
-                <button class="nav-btn">14</button>
-                <button class="nav-btn">15</button>
-                <button class="nav-btn">16</button>
-                <button class="nav-btn">17</button>
-                <button class="nav-btn">18</button>
-                <button class="nav-btn">19</button>
-                <button class="nav-btn">20</button>
-                <button class="nav-btn">21</button>
-                <button class="nav-btn">22</button>
-                <button class="nav-btn">23</button>
-                <button class="nav-btn">24</button>
-                <button class="nav-btn">25</button>
-                <button class="nav-btn">26</button>
-                <button class="nav-btn">27</button>
-                <button class="nav-btn">28</button>
-                <button class="nav-btn">29</button>
-                <button class="nav-btn">30</button>
-                <button class="nav-btn">31</button>
-                <button class="nav-btn">32</button>
-                <button class="nav-btn">33</button>
-                <button class="nav-btn">34</button>
-                <button class="nav-btn">35</button>
+                <!-- Remove all static nav-btn elements here -->
+                <!-- The JavaScript will generate these dynamically based on saved progress -->
               </div>
               <div class="quizhome-progress-actions">
                 <button class="btn reset">Reset</button>
@@ -173,7 +139,7 @@
                   <label>Timer</label>
                   <input type="text" value="None" readonly>
                 </div>
-                <button class="btn create-quiz" type="submit">Create Quiz</button>
+                <button class="btn create-quiz" type="button">Create Quiz</button>
               </form>
             </div>
           </section>
