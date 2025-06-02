@@ -1143,6 +1143,7 @@ h2 {
     background: none;
     border: none;
     box-shadow: none;
+    color: var(--white-color);
 }
 
 .aichat-messagebox input::placeholder {

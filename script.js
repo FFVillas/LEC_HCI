@@ -688,4 +688,25 @@ document.addEventListener('DOMContentLoaded', function() {
             if (e.target === modal) modal.style.display = 'none';
         });
     }
+
+    const aichatMessageboxForm = document.querySelector('.aichat-messagebox');
+    if (aichatMessageboxForm) {
+        aichatMessageboxForm.addEventListener('submit', function(e) {
+            e.preventDefault(); 
+
+            const inputElement = aichatMessageboxForm.querySelector('input[type="text"]');
+            const messageText = inputElement ? inputElement.value.trim() : '';
+
+            if (messageText) {
+                console.log("AI Chat message sent:", messageText);
+
+                if (inputElement) {
+                    inputElement.value = '';
+                }
+
+            } else {
+                console.log("Attempted to send empty AI Chat message.");
+            }
+        });
+    }
 });
