@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,222 +13,221 @@
     <link rel="icon" href="./assets/images/logo(no text).png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,0" rel="stylesheet">
     <title>SummarAIze</title>
-</head>
-<body>
-    <nav class = "sidebar close">
-        <header>
-            <div class="logo">
-                <img id="logo-image" src="./assets/images/logo.png" alt="Logo">
-            </div>
-
-            <button class="sidebar-toggle">
-                <span class="material-symbols">chevron_right</span>
-            </button>
-        </header>
-        <div class="menu-bar">
-
-            <div class="menu">
-                <ul class="menu-link">
-                    <li class="nav-link purple-button">
-                        <a href="notes.html">
-                            <span class="material-symbols-rounded">add</span>
-                            <span class="text nav-text">New Project</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link active">
-                        <a href="#">
-                            <span class="material-symbols-rounded">home</span>
-                            <span class="text nav-text">Dashboard</span>
-                        </a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">
-                            <span class="material-symbols-rounded">description</span>
-                            <span class="text nav-text">Notes</span>
-                        </a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">
-                            <span class="material-symbols-rounded">Folder</span>
-                            <span class="text nav-text">Projects</span>
-                        </a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">
-                            <span class="material-symbols-rounded">settings</span>
-                            <span class="text nav-text">Settings</span>
-                        </a>
-                    </li>
-                </ul>
-
-                <ul class="menu-link">
-                    <li class="nav-link">
-                        <a href="#">
-                            <span class="material-symbols-rounded">support_agent</span>
-                            <span class="text nav-text">Support</span>
-                        </a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">
-                            <span class="material-symbols-rounded">logout</span>
-                            <span class="text nav-text">Logout</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+  </head>
+  <body>
+    <nav class = "sidebar">
+      <header>
+        <div class="logo">
+          <a href="index.html">
+          <img id="logo-image" src="./assets/images/logo.png" alt="Logo">
+          </a>
         </div>
+        <button class="sidebar-toggle">
+        <span class="material-symbols">chevron_right</span>
+        </button>
+      </header>
+      <div class="menu-bar">
+        <div class="menu">
+          <ul class="menu-link">
+            <li class="nav-link purple-button">
+              <a href="notes.html">
+              <span class="material-symbols-rounded">add</span>
+              <span class="text nav-text">New Project</span>
+              </a>
+            </li>
+            <li class="nav-link active">
+              <a href="#">
+              <span class="material-symbols-rounded">home</span>
+              <span class="text nav-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+              <span class="material-symbols-rounded">description</span>
+              <span class="text nav-text">Notes</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+              <span class="material-symbols-rounded">Folder</span>
+              <span class="text nav-text">Projects</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+              <span class="material-symbols-rounded">settings</span>
+              <span class="text nav-text">Settings</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="menu-link">
+            <li class="nav-link">
+              <a href="#">
+              <span class="material-symbols-rounded">support_agent</span>
+              <span class="text nav-text">Support</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+              <span class="material-symbols-rounded">logout</span>
+              <span class="text nav-text">Logout</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-
     <div class="content">
-        <header>
-            <div class="user-info">
-                <img src="./assets/images/rys.jpg" alt="" draggable="false" />
-                <div class="user-text">
-                <p class="name">Rohyoonseo</p>
-                <p class="email">roh.seo@gmail.com</p>
-                </div>
+      <header>
+        <div class="user-info">
+          <img src="./assets/images/rys.jpg" alt="" draggable="false" />
+          <div class="user-text">
+            <p class="name">Rohyoonseo</p>
+            <p class="email">roh.seo@gmail.com</p>
+          </div>
+        </div>
+        <div class="search-area">
+          <div class="search-box">
+            <span class="material-symbols-rounded">search</span>
+            <input type="search" placeholder="Search Anything" aria-label="Search Anything" />
+          </div>
+        </div>
+        <div class="icon-buttons">
+          <button class="icon-btn" aria-label="Refresh">
+          <span class="material-symbols-rounded">sync</span>
+          </button>
+          <button class="icon-btn" aria-label="More options">
+          <span class="material-symbols-rounded">more_horiz</span>
+          </button>
+        </div>
+      </header>
+      <h1>Welcome back, Seo!</h1>
+      <section>
+        <h2>Create New Notes</h2>
+        <div class="create-notes">
+          <button class="note-btn" type="button">
+            <div class="circle-icon">
+              <span class="material-symbols-rounded">movie</span>
             </div>
-            <div class="search-area">
-                <div class="search-box">
-                <span class="material-symbols-rounded">search</span>
-                <input type="search" placeholder="Search Anything" aria-label="Search Anything" />
-                </div>
+            <div class="note-text">
+              <p>Record or Upload Audio</p>
+              <p>Upload an Audio File</p>
             </div>
-            <div class="icon-buttons">
-                <button class="icon-btn" aria-label="Refresh">
-                    <span class="material-symbols-rounded">sync</span>
-                </button>
-                <button class="icon-btn" aria-label="More options">
-                    <span class="material-symbols-rounded">more_horiz</span>
-                </button>
+          </button>
+          <button class="note-btn" type="button">
+            <div class="circle-icon">
+              <span class="material-symbols-rounded">mic</span>
             </div>
-        </header>
-        <h1>Welcome back, Seo!</h1>
-        <section>
-            <h2>Create New Notes</h2>
-            <div class="create-notes">
-                <button class="note-btn" type="button">
-                <div class="circle-icon">
-                    <span class="material-symbols-rounded">movie</span>
-                </div>
-                <div class="note-text">
-                    <p>Record or Upload Audio</p>
-                    <p>Upload an Audio File</p>
-                </div>
-                </button>
-                <button class="note-btn" type="button">
-                <div class="circle-icon">
-                    <span class="material-symbols-rounded">mic</span>
-                </div>
-                <div class="note-text">
-                    <p>Youtube Video</p>
-                    <p>Paste a Youtube Link</p>
-                </div>
-                </button>
-                <button class="note-btn" type="button">
-                <div class="circle-icon">
-                    <span class="material-symbols-rounded">description</span>
-                </div>
-                <div class="note-text">
-                    <p>Document Upload</p>
-                    <p>Any PDF, PPT, DOC, etc</p>
-                </div>
-                </button>
+            <div class="note-text">
+              <p>Youtube Video</p>
+              <p>Paste a Youtube Link</p>
             </div>
-        </section>
-        <section>
-            <h2>Quick Access</h2>
-            <div class="quick-access">
-                <article class="quick-card">
-                <div class="corner-color quick-yellow"></div>
-                <p class="notes-count">4 notes</p>
-                <p class="title">Software Engineering</p>
-                <p class="date">May 14, 2025</p>
-                <button class="more-btn" aria-label="More options">
-                    <i class="fas fa-ellipsis-h"></i>
-                </button>
-                </article>
-                <article class="quick-card">
-                <div class="corner-color quick-red"></div>
-                <p class="notes-count">4 notes</p>
-                <p class="title">Human Computer Interaction</p>
-                <p class="date">May 14, 2025</p>
-                <button class="more-btn" aria-label="More options">
-                    <i class="fas fa-ellipsis-h"></i>
-                </button>
-                </article>
-                <article class="quick-card">
-                <div class="corner-color quick-blue"></div>
-                <p class="notes-count">4 notes</p>
-                <p class="title">Framework Layer Architecture</p>
-                <p class="date">May 14, 2025</p>
-                <button class="more-btn" aria-label="More options">
-                    <i class="fas fa-ellipsis-h"></i>
-                </button>
-                </article>
-                <article class="quick-card">
-                <div class="corner-color quick-pink"></div>
-                <p class="notes-count">4 notes</p>
-                <p class="title">Machine Learning</p>
-                <p class="date">May 14, 2025</p>
-                <button class="more-btn" aria-label="More options">
-                    <i class="fas fa-ellipsis-h"></i>
-                </button>
-                </article>
+          </button>
+          <button class="note-btn" type="button">
+            <div class="circle-icon">
+              <span class="material-symbols-rounded">description</span>
             </div>
-        </section>
-        <section>
-            <h2>Recent Notes</h2>
-            <div class="recent-notes">
-                <article class="recent-card">
-                <h3>Fundementals of Software Testing</h3>
-                <p>Software testing ensures that a system meets its requirements and works as intended. It involves techniques like unit testing, integration testing, and system testing. The main goals are to detect bugs early and improve software quality...</p>
-                <div class="recent-footer">
-                    <time datetime="2025-05-14">May 14, 2025</time>
-                    <button aria-label="More options">
-                    <i class="fas fa-ellipsis-h"></i>
-                    </button>
-                </div>
-                </article>
-                <article class="recent-card">
-                <h3>Secure Software Development <svg class="star-icon" aria-hidden="true" viewBox="0 0 20 20" fill="currentColor" focusable="false" role="img">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.974a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.388 2.455a1 1 0 00-.364 1.118l1.287 3.974c.3.922-.755 1.688-1.54 1.118l-3.388-2.455a1 1 0 00-1.175 0l-3.388 2.455c-.784.57-1.838-.196-1.539-1.118l1.287-3.974a1 1 0 00-.364-1.118L2.045 9.4c-.783-.57-.38-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.974z"></path>
-                    </svg>
-                </h3>
-                <p>Secure software development integrates security practices throughout the development lifecycle. It includes threat modeling, secure coding standards, and regular code reviews. The aim is to prevent vulnerabilities before deployment...</p>
-                <div class="recent-footer">
-                    <time datetime="2025-05-14">May 14, 2025</time>
-                    <button aria-label="More options">
-                    <i class="fas fa-ellipsis-h"></i>
-                    </button>
-                </div>
-                </article>
-                <article class="recent-card">
-                <h3>Risk Analysis and Management...</h3>
-                <p>Risk analysis identifies potential problems that could affect a project’s success. Risk management involves assessing impact, likelihood, and creating mitigation plans. It helps minimize uncertainty and guides better decision-making...</p>
-                <div class="recent-footer">
-                    <time datetime="2025-05-14">May 14, 2025</time>
-                    <button aria-label="More options">
-                    <i class="fas fa-ellipsis-h"></i>
-                    </button>
-                </div>
-                </article>
+            <div class="note-text">
+              <p>Document Upload</p>
+              <p>Any PDF, PPT, DOC, etc</p>
             </div>
-        </section>
+          </button>
+        </div>
+      </section>
+      <section>
+        <h2>Quick Access</h2>
+        <div class="quick-access">
+          <article class="quick-card">
+            <div class="corner-color quick-yellow"></div>
+            <p class="notes-count">4 notes</p>
+            <p class="title">Software Engineering</p>
+            <p class="date">May 14, 2025</p>
+            <button class="more-btn" aria-label="More options">
+            <i class="fas fa-ellipsis-h"></i>
+            </button>
+          </article>
+          <article class="quick-card">
+            <div class="corner-color quick-red"></div>
+            <p class="notes-count">4 notes</p>
+            <p class="title">Human Computer Interaction</p>
+            <p class="date">May 14, 2025</p>
+            <button class="more-btn" aria-label="More options">
+            <i class="fas fa-ellipsis-h"></i>
+            </button>
+          </article>
+          <article class="quick-card">
+            <div class="corner-color quick-blue"></div>
+            <p class="notes-count">4 notes</p>
+            <p class="title">Framework Layer Architecture</p>
+            <p class="date">May 14, 2025</p>
+            <button class="more-btn" aria-label="More options">
+            <i class="fas fa-ellipsis-h"></i>
+            </button>
+          </article>
+          <article class="quick-card">
+            <div class="corner-color quick-pink"></div>
+            <p class="notes-count">4 notes</p>
+            <p class="title">Machine Learning</p>
+            <p class="date">May 14, 2025</p>
+            <button class="more-btn" aria-label="More options">
+            <i class="fas fa-ellipsis-h"></i>
+            </button>
+          </article>
+        </div>
+      </section>
+      <section>
+        <h2>Recent Notes</h2>
+        <div class="recent-notes">
+          <article class="recent-card">
+            <h3>Fundementals of Software Testing</h3>
+            <p>Software testing ensures that a system meets its requirements and works as intended. It involves techniques like unit testing, integration testing, and system testing. The main goals are to detect bugs early and improve software quality...</p>
+            <div class="recent-footer">
+              <time datetime="2025-05-14">May 14, 2025</time>
+              <button aria-label="More options">
+              <i class="fas fa-ellipsis-h"></i>
+              </button>
+            </div>
+          </article>
+          <article class="recent-card">
+            <h3>
+              Secure Software Development 
+              <svg class="star-icon" aria-hidden="true" viewBox="0 0 20 20" fill="currentColor" focusable="false" role="img">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.974a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.388 2.455a1 1 0 00-.364 1.118l1.287 3.974c.3.922-.755 1.688-1.54 1.118l-3.388-2.455a1 1 0 00-1.175 0l-3.388 2.455c-.784.57-1.838-.196-1.539-1.118l1.287-3.974a1 1 0 00-.364-1.118L2.045 9.4c-.783-.57-.38-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.974z"></path>
+              </svg>
+            </h3>
+            <p>Secure software development integrates security practices throughout the development lifecycle. It includes threat modeling, secure coding standards, and regular code reviews. The aim is to prevent vulnerabilities before deployment...</p>
+            <div class="recent-footer">
+              <time datetime="2025-05-14">May 14, 2025</time>
+              <button aria-label="More options">
+              <i class="fas fa-ellipsis-h"></i>
+              </button>
+            </div>
+          </article>
+          <article class="recent-card">
+            <h3>Risk Analysis and Management...</h3>
+            <p>Risk analysis identifies potential problems that could affect a project’s success. Risk management involves assessing impact, likelihood, and creating mitigation plans. It helps minimize uncertainty and guides better decision-making...</p>
+            <div class="recent-footer">
+              <time datetime="2025-05-14">May 14, 2025</time>
+              <button aria-label="More options">
+              <i class="fas fa-ellipsis-h"></i>
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
     </div>
     <div id="upload-modal" class="modal-overlay" style="display:none;">
-        <div class="modal-content">
-            <button class="modal-close" aria-label="Close">&times;</button>
-            <div class="modal-circle-icon" id="modal-icon">
-                <!-- Icon will be set by JS -->
-            </div>
-            <h2 id="modal-title">Upload</h2>
-            <div id="modal-body">
-                <!-- Content will be set by JS -->
-            </div>
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close">&times;</button>
+        <div class="modal-circle-icon" id="modal-icon">
+          <!-- Icon will be set by JS -->
         </div>
+        <h2 id="modal-title">Upload</h2>
+        <div id="modal-body">
+          <!-- Content will be set by JS -->
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
