@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const logo = document.getElementById('logo-image');
     const content = body.querySelector('.content');
     const toggleIcon = body.querySelector('.sidebar-toggle .material-symbols');
-    sidebar.classList.toggle('close');
     let isClosed = false;
 
     if (sidebar && toggle && logo && content && toggleIcon) {
